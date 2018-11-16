@@ -8,6 +8,8 @@ header {
     text-transform: uppercase;
 }
 header nav {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -96,9 +98,13 @@ footer {
     padding: 60px 0px;
 }
 .copy {
+    position: absolute;
     font-family: 'lato', sans-serif !important;
     border-top: solid 3px #44545E;
+    padding: 20px 0px 0px 0px;
     font-weight: 400;
+    text-align: center;
+    width: 100%;
 }
 .button {
     border-color: #44545E;
