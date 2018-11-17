@@ -20,6 +20,13 @@ header nav {
     background-color: white;
     padding: 20px;
 }
+a {
+    text-decoration: none;
+    color: #7C99AA;
+}
+/*=============================================   
+header//////
+===============================================*/
 h1 {
     background-image: url("../images/blog_header_bg.jpg");
     background-size: cover;
@@ -29,13 +36,18 @@ h1 {
     letter-spacing: .5em;
     padding: 150px;
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 10em;
 }
-a {
-    text-decoration: none;
-    color: #7C99AA;
-    
-}
+/*=============================================   
+flexed article and side//////start of flex
+===============================================*/
+.flex {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+} 
+
 h2, h3, h4 {
     color: #44545E;
     text-transform: uppercase;
@@ -43,6 +55,9 @@ h2, h3, h4 {
 h2 {
     font-size: 15px;
     margin-top: 40px;
+}
+.article h3 {
+    margin-bottom: 45px;
 }
 .Blog {
     width: 100%;
@@ -57,30 +72,88 @@ p {
 .article {
     margin: 0px 50px;
 }
+/*=============================================   
+bullets about us//////still flexed
+===============================================*/
 ul {
     color: #44545E;
     font-size: 14px;
     margin: 0px -20px;
-
 }
 ul li {
     font-family: 'Lato', sans-serif !important;
     margin-bottom: 15px;
     font-weight: 400;
 }
-h3 {
-    margin-bottom: 45px;
-}
-.flex {
-    display: -webkit-flexbox;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-}
 .side{
     width: 30% auto;
     margin-right: 50px;
 }
+
+/*=============================================   
+comment box!//////end of flex/////start of grid
+===============================================*/
+input[name="name"]{
+    grid-area: name;
+    border: solid 2px #44545E;
+    padding: 12px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 12px;
+}
+input[name="email"]{
+    grid-area: email;
+    border: solid 2px #44545E;
+    padding: 12px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 12px;
+}
+textarea[name="comment"]{
+    grid-area: comment;
+    border: solid 2px #44545E;
+    padding: 5px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 12px;
+    resize: none;
+    height: 10em;
+}
+input[name="submit"]{
+    grid-area: submit;
+    border: solid 2px #44545E;
+    padding: 12px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 12px;
+}
+
+.input {
+    display: grid;
+    grid-template-areas:
+        "name email"
+        "comment comment"
+        "comment comment"
+        "comment comment"
+        "submit submit";
+    grid-gap: 15px;
+    margin: 0px 75px 25px 75px;
+}
+.comment {
+    text-align: center;
+    margin: 50px 0px 40px 0px;
+}
+/*=============================================   
+footer//////end of grid////start of flex
+===============================================*/
 .footer {
     display: -webkit-flexbox;
     display: -ms-flexbox;
