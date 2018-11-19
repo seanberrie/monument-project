@@ -101,31 +101,16 @@ input[name="name"]{
     grid-area: name;
     border: solid 2px #44545E;
     padding: 12px 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    font-size: 12px;
 }
 input[name="email"]{
     grid-area: email;
     border: solid 2px #44545E;
     padding: 12px 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    font-size: 12px;
 }
 textarea[name="comment"]{
     grid-area: comment;
     border: solid 2px #44545E;
     padding: 5px 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    font-size: 12px;
     resize: none;
     height: 10em;
 }
@@ -133,11 +118,11 @@ input[name="submit"]{
     grid-area: submit;
     border: solid 2px #44545E;
     padding: 12px 0px;
-    /* font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: .15em;
-    font-size: 12px; */
+    color: #44545E;
+    font-size: .75em;
 }
 
 .input {
@@ -198,11 +183,7 @@ footer {
 }
 .form {
     padding: 12px 70px;
-    text-transform: uppercase;
-    color: lightslategray;
-    font-weight: 600;
     margin: 30px 15px;
-    font-size: 12px;
     text-align:center;
 }
 .button:hover{
@@ -210,24 +191,25 @@ footer {
     background-color: #44545E;    
     transition-delay:0.5s;   
 }
+/*=============================================   
+placeholder
+===============================================*/
 
-
-
-
-form::placeholder {
+input::placeholder {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    color: #44545E;
-
-
+    text-transform: uppercase;
+    color: #7C99AA;
+    font-size: 1em;
 }
 
-
-
-
-
-
-
+textarea::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #7C99AA;
+    font-size: 1em;
+}
 
 /*=============================================   
 small screen
@@ -265,11 +247,23 @@ small screen
         position: absolute;
         background-color: #f9f9f9;
         z-index: 1;
+        top: 45px;
     }
-    i:active ~ .dropdown-content{
+    i:hover ~ .dropdown-content{
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: cover;
+        text-align: left;
+    }
+    .dropdown-content:hover {
+        display:flex;
+        flex-direction: column;
+        width: cover;
+        text-align: left;
+    }
+    nav a:hover {
+        background-color: darkslategray;
+        width: 60px;
     }
     aside {
         display: none;
