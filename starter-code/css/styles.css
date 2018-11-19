@@ -7,6 +7,10 @@ header {
     text-align: center;
     text-transform: uppercase;
 }
+
+i {
+    display: none;
+}
 header nav {
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -36,7 +40,7 @@ h1 {
     letter-spacing: .5em;
     padding: 150px;
     margin-top: 20px;
-    font-size: 10em;
+    font-size: 3em;
 }
 /*=============================================   
 flexed article and side//////start of flex
@@ -129,11 +133,11 @@ input[name="submit"]{
     grid-area: submit;
     border: solid 2px #44545E;
     padding: 12px 0px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .15em;
-    font-size: 12px;
+    font-size: 12px; */
 }
 
 .input {
@@ -204,6 +208,70 @@ footer {
 .button:hover{
     color: white;
     background-color: #44545E;    
-    transition-delay:0.5s;
-    
+    transition-delay:0.5s;   
+}
+
+
+
+
+form::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #44545E;
+
+
+}
+
+
+
+
+
+
+
+
+/*=============================================   
+small screen
+===============================================*/
+
+
+@media only screen and (max-width: 600px) {
+    .phone {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2em;
+        margin: -20px 0px 0px 0px;
+    }
+    .input {
+        display: grid;
+        grid-template-areas:
+        "name"
+        "email"
+        "comment"
+        "submit"
+    }
+    header nav {
+    display:none;
+   }
+    header i{
+        float: left;
+        margin: 5px;
+        color: white;
+        font-size: 2em;
+    }
+    .dropdown-content {
+        display: hidden;
+        position: absolute;
+        background-color: #f9f9f9;
+        z-index: 1;
+    }
+    i:active ~ .dropdown-content{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    aside {
+        display: none;
+    } 
 }

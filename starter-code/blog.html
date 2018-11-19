@@ -9,17 +9,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Monument Magazine</title>
 </head>
-<body>
+
+<body class="phone">
+    
     <header>
-        <nav>
+        <div class="drop">
+        <i class="fas fa-bars"></i>    
+        <nav class="dropdown-content">
             <a href="#">About</a>
             <a href="#">Gallery</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
         </nav>
+        </div>
         <br>
-        <h1 style="font-size:4.5vw;">Monument</h1>
+        <h1>Monument</h1>
     </header>
+    
     <div class="flex">
         <div class= "article">
             <h2>11/23/2016</h2>
@@ -54,7 +60,7 @@
                 amet vitae consectetur laudantium praesentium voluptatum accusamus asperiores dolore vero?
                 </p>
             </div>
-        </div> 
+        </div>
             <aside class="side">
                 <h4>About Us</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum mi ac nulla luctus, ac maximus
@@ -82,7 +88,7 @@
     <br>
         <h3 class="comment">Leave A Comment</h3>
     <form class="input">
-        <input name="name" type="text" placeholder="Name"/> 
+        <input name="name" type="text" placeholder="Name" class="nameform"/> 
         <input name="email" type="text" placeholder="Email"/>
         <textarea name="comment" type="text" placeholder="comment"></textarea>
         <input type="submit" name="submit" />
@@ -94,8 +100,6 @@
             <i class="fab fa-instagram fa-4px"></i>
             <i class="fab fa-twitter-square"></i>
         </div>
-        <br>
-        <br>
         <br>
         <form>
                 <input name="emailaddress" type="text" class="form" placeholder="Email Address">
