@@ -1,0 +1,320 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+/*=============================================   
+header//////
+===============================================*/
+
+header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+}
+.title {
+    font-size: .25em;
+}
+h1{
+    background-image: url("../images/home_header_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top:20px;
+    color: white;
+    padding: 371px;
+    width: 100%;
+}
+
+/*=============================================   
+nav//////
+===============================================*/
+
+i {
+    display: none;
+}
+header nav {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: #7C99AA;
+}
+
+/*=============================================   
+body//////
+===============================================*/
+h2 {
+    font-size: 20px;
+    margin: 40px 0px;
+    color: #44545E;
+    text-transform: uppercase;
+    text-align: center;
+}
+h3 {
+    color: #44545E;
+    text-transform: uppercase;
+    font-size: 1em;    
+}
+p{
+    color: #7C99AA;
+}
+.archive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    position: inherit;
+}
+.art {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+.article1 {
+    width: 20%;
+    height: 300;
+    text-align: center;
+}
+.article2 {
+    width: 20%;
+    height: 300;
+    text-align: center;
+}
+.article3 {
+    width: 20%;
+    height: 300;
+    text-align: center;
+}
+.readmore {
+    border-color: #44545E;
+    border-width: medium;
+    background-color: #CDF3F6;
+    color: #44545E;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 15px;
+    transition: 1s background-color color;
+    text-align: center;
+}
+.readmore:hover {
+    background-color: white;
+}
+/*=============================================   
+center//////
+===============================================*/
+.center {
+    background-color: #CDF3F6;
+    width: inherit;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 2em;
+}
+h4 {
+    font-size: 25px;
+    color: #44545E;
+    text-transform: uppercase;
+}
+/*=============================================   
+gallery//////
+===============================================*/
+.gallery {
+    text-align: center;
+}
+.photos {
+    display: grid;
+    grid-template-areas:
+        "p1 p2 p3"
+        "p4 p5 p6";
+    grid-gap: 15px;
+    margin: 0px 75px 25px 75px;
+}
+img [name="p1"] {
+    grid-area: name;
+    width:100px;
+    height: auto;
+}
+img [name="p2"] {
+    grid-area: name;
+    width:100px;
+    height: auto;
+}
+img [name="p3"] {
+    grid-area: name;
+    width:100px;
+    height: auto;
+}
+img [name="p4"] {
+    grid-area: name;
+    width:100px;
+    height: auto;
+}
+img [name="p5"] {
+    grid-area: name;
+    width:100px;
+    height: auto;
+}
+img [name="p6"] {
+    grid-area: name;
+    width:100px;
+    height: auto;
+}
+
+
+/*=============================================   
+form//////
+===============================================*/
+
+
+
+input[name="name"]{
+    grid-area: name;
+    border: solid 2px #44545E;
+    padding: 12px 10px;
+}
+input[name="subject"]{
+    grid-area: subject;
+    border: solid 2px #44545E;
+    padding: 12px 10px;
+}
+input[name="email"]{
+    grid-area: email;
+    border: solid 2px #44545E;
+    padding: 12px 10px;
+}
+textarea[name="comment"]{
+    grid-area: comment;
+    border: solid 2px #44545E;
+    padding: 5px 10px;
+    resize: none;
+    height: 10em;
+}
+input[name="submit"]{
+    grid-area: submit;
+    border: solid 2px #44545E;
+    padding: 12px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #44545E;
+    font-size: .75em;
+}
+input[name="submit"]:hover {
+    background-color: #44545E;
+    color: white;
+}
+.input {
+    display: grid;
+    grid-template-areas:
+        "name  subject email"
+        "comment comment comment"
+        "comment comment comment"
+        "comment comment comment"
+        "submit submit submit";
+    grid-gap: 15px;
+    margin: 0px 75px 25px 75px;
+}
+.comment {
+    text-align: center;
+    margin: 50px 0px 40px 0px;
+}
+
+
+
+
+
+/*=============================================   
+footer//////
+===============================================*/
+
+
+.footer {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 35px;
+    margin: 0px 200px;
+}
+footer {
+    color: #44545E;
+    text-align: center;
+    background-color: #CDF3F6;
+    padding: 60px 0px;
+}
+.copy {
+    position: absolute;
+    font-family: 'lato', sans-serif !important;
+    border-top: solid 3px #44545E;
+    padding: 20px 0px 0px 0px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+.button {
+    border-color: #44545E;
+    border-width: medium;
+    background-color: #CDF3F6;
+    color: #44545E;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 15px;
+    transition: 0s background-color color;
+    text-align: center;
+}
+.form {
+    padding: 12px 70px;
+    margin: 30px 15px;
+    text-align:center;
+}
+.button:hover{
+    color: white;
+    background-color: #44545E;    
+    transition-delay:0.5s;   
+}
+/*=============================================   
+placeholder
+===============================================*/
+
+input::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #7C99AA;
+    font-size: 1em;
+}
+
+textarea::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #7C99AA;
+    font-size: 1em;
+}
